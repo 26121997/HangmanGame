@@ -4,7 +4,7 @@ import time
 # welcoming the user
 name = input("What is your name? ")
 
-print("Hello, " + name, "Time to play hangman!")
+print("Hello, " + name, "Time to play hangman!\n Guess the FRUIT name")
 
 # wait for 1 second
 time.sleep(1)
@@ -13,7 +13,7 @@ print("Start guessing...")
 time.sleep(0.5)
 
 # here we set the secret. You can select any word to play with.
-word = ("secret")
+word = ("apricot")
 
 # creates an variable with an empty value
 guesses = ''
@@ -54,7 +54,7 @@ while turns > 0:
         # exit the script
         break
         # ask the user go guess a character
-    guess = input("guess a character:")
+    guess = input("\n guess a character:")
 
     # set the players guess to guesses
     guesses += guess
